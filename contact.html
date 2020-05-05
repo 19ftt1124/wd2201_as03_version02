@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+body {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	background-image: url(images/administration.jpg);
+  background-size: cover;
+  background-position: center;
+      color: #720085;
+}
+
+      /* Header  and navigation*/
+
+      header{
+  position:absolute;
+  left:0;
+  right:0;
+  margin-top:1em;
+      }
+
+      nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+      }
+
+      nav li {
+	display: inline-block;
+	margin: 1em;
+  }
+
+      nav a {
+	font-weight: 900;
+	text-decoration: none;
+	padding: .5em;
+	text-transform: uppercase;
+	color: purple;
+	font-size: .8rem;
+  }
+
+    nav a:hover,
+    nav a:focus {
+	color: #003085;
+  }
+
+    @media (min-width:60rem) {
+	   .logo {
+  float: left;
+  height: 48px;
+  width: 48px;
+
+	}
+
+	nav {
+float: right;
+	}
+  }
+
+ /* Header image */
+
+    .home-hero {
+  background-image: url(images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: #720085;
+    }
+
+    @media (min-width: 60rem) {
+    	.home-hero {
+    		/* height: 100vh; */
+     		padding-top: 5vh;
+    	}
+    }
+
+
+.cta {
+	padding-top: 8em;
+	width: 100%;
+}
+
+
+.contact-title{
+    margin-top:100px ; 
+    color: rgb(250, 243, 243);
+    font-size: 52px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+    font-family: Impact;
+}
+
+.contact-title h1{
+    font-size: 1em;
+    margin: 20px 0;
+    color: black;
+}
+
+.contact-title h2{
+    font-size: 16px;
+    color: #000;
+}
+
+
+.container1{
+    width: 100%;
+}
+
+
+.form-control{
+    width: 80%;
+    background:transparent ;
+    outline: none;
+    border-bottom: 3px solid white;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background:#ff5722;
+    border-color: transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height:50px;
+    margin-top:20px ;
+}
+
+/* Footer*/
+
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+}
+
+.container {
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+/* Column system*/
+
+[class^=col-] {
+  width: 100%;
+  margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+  margin-top: 0;
+}
+
+.col-1 {
+  width: 33.333334%;
+  float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+  [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+  }
+
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
+  [class^=col-]:last-child {
+    padding-right: 0;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 16.6666%;
+  }
+}
+
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width:60rem) {
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 3.7rem;
+  }
+}
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  background: #232323;
+  color: #fff;
+  text-align: left;
+  padding: 10em 0;
+  margin-top: 20em;
+}
+
+
+	</style>
+</head>
+<body>
+
+<header>
+<img src="images/logo.png" alt="pb. logo" class="logo">
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+</header>
+
+<section class="cta">
+	<br><br><br><br><br>
+	<div class="container1">
+    <div class="contact-title">
+        <h1><p>Contact Us</p></h1>
+        <h2>We are always ready to serve you</h2>
+    </div>
+
+    <div class="contact-forms">
+        <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+            <br>
+
+            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+            <br>
+
+            <input type="submit" class="form-control submmit" value="SEND MESSAGE">
+        </form> 
+    </div>
+</div>
+</section>
+
+ <footer>
+  <div class="container">
+    <div class="col-3">
+      <p>Politeknik Brunei Ministry of Education, Block 2E, Ong Sum Ping, Jalan Ong Sum Ping, Bandar Seri Begawan, BA1311, Brunei Darussalam.</p>
+    </div>
+
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>PURPOSE</strong></li>
+        <li>Assignment Purpose</li>
+        <li>Ass_02</li>
+        <li>PB HRD</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>BWEP</strong></li>
+        <li>WD2201_SICT</li>
+        <li>Muhammad Khalid bin Haji Zaini</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>19FTT1124</strong></li>
+        <li>DLIC05</li>
+        <li>Intake09</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

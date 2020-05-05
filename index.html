@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+
+    <style media="screen">
+
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+
+      * {
+	box-sizing: border-box;
+      }
+
+      body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+  font-weight: bold;
+/*  font-size: 2em;*/
+      }
+
+   img{
+  max-width: 100%;
+  height: auto;
+      }
+
+      .container-main {
+  width: 100%;
+  max-width: 70em;
+  margin: 0 auto;
+      }
+/* Header and Navigation part */
+
+      /* Header  and navigation*/
+
+      header{
+  position:absolute;
+  left:0;
+  right:0;
+  margin-top:1em;
+      }
+
+      nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+      }
+
+      nav li {
+	display: inline-block;
+	margin: 1em;
+  }
+
+      nav a {
+	font-weight: 900;
+	text-decoration: none;
+	padding: .5em;
+	text-transform: uppercase;
+	color: purple;
+	font-size: .8rem;
+  }
+
+    nav a:hover,
+    nav a:focus {
+	color: #003085;
+  }
+
+    @media (min-width:60rem) {
+	   .logo {
+  float: left;
+  height: 48px;
+  width: 48px;
+
+	}
+
+	nav {
+float: right;
+	}
+  }
+
+    /* Header image */
+
+    .home-hero {
+  background-image: url(images/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: #720085;
+    font-size: 2em;
+    }
+
+    @media (min-width: 60rem) {
+    	.home-hero {
+    		/* height: 100vh; */
+     		padding-top: 5vh;
+    	}
+    }
+
+    /* Header font and content */
+
+    .title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 5em;
+  }
+
+    .title span {
+  color: #003085;
+  font-weight: 600;
+  display: block;
+  font-size: .9em;
+  animation: text 3s infinite;
+  }
+
+    @keyframes text{
+    0%{color: black;}
+    30%{letter-spacing: 25px;}
+    85%{letter-spacing: 8px; }
+  }
+
+    @media (min-width:60rem) {
+
+  p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  }
+
+    .title {
+  font-size: 3.7rem;
+  }
+
+    .button {
+  margin-bottom:3.5em;
+  display: inline-block;
+  font-size: 1.15rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+  }
+
+    .button-accent {
+  color:#fff;
+  border-color: #720085;
+  }
+
+    .button-accent:hover,
+    .button-accent:focus {
+  background: #720085;
+  color: #232323;
+  }
+
+    @media (min-width: 60rem) {
+      .button {
+  font-size: 1.5rem;
+  }
+  }
+
+  /* Header and Navigation part end*/
+
+  /* Content 1 */
+  .carousel{
+    position:relative;
+    height:600px;
+    width:80%;
+    margin:0 auto;
+  }
+
+.carousel_image{
+  padding:50px 0;
+  width:100%;
+  /* height:100%; */
+  object-fit:cover;
+}
+
+  .carousel_slide{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+  }
+
+  .carousel_track-container{
+    /* background: #720085; */
+    padding:10px;
+    /* height:100%; */
+    position:relative;
+  }
+
+  .carousel_track{
+    padding:0;
+    margin:0;
+    list-style:none;
+  }
+
+  .carousel_button{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:transparent;
+    border:0;
+    cursor:pointer;
+  }
+
+  .carousel_button img{
+    width:20px;
+  }
+
+  .carousel_button--left{
+    left:-80px;
+  }
+
+  .carousel_button--right{
+    left:-80px;
+  }
+
+  .carousel_nav{
+    /* background:#003085; */
+    display:flex;
+    justify-content:  center;
+    padding:300px 0;
+  }
+
+.carousel_indicator{
+  border:0;
+  border-radius:50%;
+  width:15px;
+  height:15px;
+  background:rgba(0,0,0,.3);
+  margin:0 10px;
+}
+
+/*content 1 end*/
+
+/* content 2 */
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/*content 2 end*/
+
+/* content 3 */
+
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+/*.slide:nth-child(1) {
+  background: #D93B65;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+*/
+.slide{
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+  /*content 3 end*/
+
+  /* Footer*/
+
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+}
+
+.container {
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+/* Column system*/
+
+[class^=col-] {
+  width: 100%;
+  margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+  margin-top: 0;
+}
+
+.col-1 {
+  width: 33.333334%;
+  float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+  [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+  }
+
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
+  [class^=col-]:last-child {
+    padding-right: 0;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 16.6666%;
+  }
+}
+
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width:60rem) {
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 3.7rem;
+  }
+}
+
+footer {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  background: #232323;
+  color: #fff;
+  text-align: left;
+  padding: 10em 0;
+}
+
+</style>
+
+  </head>
+  <body>
+
+<!-- header and navigation  -->
+<header>
+<img src="images/logo.png" alt="pb. logo" class="logo">
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+<!-- header and navigation end-->
+
+<!-- header content-->
+<section class="home-hero parallax--bg">
+<div class="container-main">
+  <h1 class="title parallax--box">Human Resource Department<span>of Politeknik's Brunei</span>
+  </h1>
+  <a href="" class="button button-accent">See Our Work</a>
+
+  <!-- content 1 -->
+
+<section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="images/vission.png">
+          <h3>Vision</h3>
+          <p> To reach excellence in providing reliable Human Resource services and continuous improvement.</p>
+        </div>
+        <div class="box">
+          <img src="images/mission.png">
+          <h3>Mission</h3>
+          <p>To provide the following quality services to the employees of Politeknik's Brunei.</p>
+        </div>
+        <div class="box">
+          <img src="images/value.png">
+          <h3>Value</h3>
+          <p>To helps companies to structure and optimise their talent management strategies and to implement global staff.</p>
+        </div>
+      </div>
+    </section
+>
+
+  <!-- content 1 end-->
+
+
+ <div id="slideshow">
+  <div class="slide-wrapper">
+    <div class="slide"><img src="images/b1.jpg"></div>
+    <div class="slide"><img src="images/b2.jpg"></div>
+     <div class="slide"><img src="images/bnr.jpg"></div>
+    <div class="slide"><img src="images/b6.jpg"></div>
+
+  </div>
+</div>
+
+  <!-- content 2 end -->
+
+
+<!-- header content end-->
+
+</div>
+</section>
+
+  <footer>
+  <div class="container">
+    <div class="col-3">
+      <p>Politeknik Brunei Ministry of Education, Block 2E, Ong Sum Ping, Jalan Ong Sum Ping, Bandar Seri Begawan, BA1311, Brunei Darussalam.</p>
+    </div>
+
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>PURPOSE</strong></li>
+        <li>Assignment Purpose</li>
+        <li>Ass_02</li>
+        <li>PB HRD</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>BWEP</strong></li>
+        <li>WD2201_SICT</li>
+        <li>Muhammad Khalid bin Haji Zaini</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>19FTT1124</strong></li>
+        <li>DLIC05</li>
+        <li>Intake09</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
+WD2201_BWEP | AZIAWATI SAMAT | @APRIL 2020

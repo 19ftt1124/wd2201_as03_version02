@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+      body{
+         background-image: url(images/administration.jpg);
+      background-size: cover;
+      background-position: center;
+      color: #720085;
+      }
+
+
+/* header and navigation */
+
+            header{
+        position:absolute;
+        left:0;
+        right:0;
+        margin-top:1em;
+            }
+
+            nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+            }
+
+            nav li {
+      	display: inline-block;
+      	margin: 1em;
+        }
+
+            nav a {
+      	font-weight: 900;
+      	text-decoration: none;
+      	padding: .5em;
+      	text-transform: uppercase;
+      	color: purple;
+      	font-size: .8rem;
+        }
+
+          nav a:hover,
+          nav a:focus {
+      	color: #003085;
+        }
+
+          @media (min-width:60rem) {
+      	   .logo {
+        float: left;
+        height: 48px;
+        width: 48px;
+
+      	}
+
+      	nav {
+      float: right;
+      	}
+        }
+
+        /* background and content */
+
+        .home-hero {
+      background-image: url(images/administration.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 20em 0;
+      color: #fff;
+      font-size: 30px;
+        }
+
+        @media (min-width: 60rem) {
+          .home-hero {
+            height: 40vh;
+            padding-top: 35vh;
+          }
+        }
+
+
+        /* Sidebar */
+
+      /* Global */
+      .container{
+      width:80%;
+      margin:auto;
+      overflow:hidden;
+      }
+
+      aside#sidebar{
+      float:right;
+      width:30%;
+      margin-top:10px;
+      }
+
+      aside#sidebar .quote input, aside#sidebar .quote textarea{
+      width:90%;
+      padding:5px;
+      }
+
+        /* Main-col */
+      article#main-col{
+      float:left;
+      width:65%;
+      }
+
+      .dark{
+      padding:15px;
+      background:#35424a;
+      color:#ffffff;
+      margin-top:10px;
+      margin-bottom:10px;
+      line-height:40px;
+      }
+
+      /*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+.main{
+ justify-content: center;
+  width: 90%;
+  padding: 10px;
+  margin: 100px auto;
+  display: flex;
+  opacity: 1;
+}
+
+.boxes{
+ color: black;
+ text-align: center;
+line-height: 1em;
+  width: 350px;
+  height: 150px;
+  background-image: url(images/image1.jpg);
+  margin: 0px 10px;
+  transition: 1s;
+  
+}
+
+.boxes:hover{
+  transform: scale(1.3);
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+
+}
+
+/*Team*/
+
+.title{
+   background-image: url(images/administration.jpg);background-image: url(images/administration.jpg);
+      background-size: cover;
+      background-position: center;
+      padding: 1em 0;
+      color: #720085;
+      text-align: center;
+}
+
+.team-section{
+  background-image: url(images/administration.jpg);
+  background-size: cover;
+   background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.crdcta{
+  width:400px;
+  height: 250px;
+  margin: 15px;
+  padding: 2% 0;
+
+}
+.crdcta img{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.crdcta img,h2{
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+    font-size: 30px;
+  }
+
+  /* Footer*/
+
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+}
+
+.container {
+  width: 95%;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+/* Column system*/
+
+[class^=col-] {
+  width: 100%;
+  margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+  margin-top: 0;
+}
+
+.col-1 {
+  width: 33.333334%;
+  float: left;
+}
+
+
+@media (min-width: 40rem) {
+
+  [class^=col-] {
+    float: left;
+    padding: 0 .5em;
+    margin-top: 0;
+  }
+
+  [class^=col-]:first-child {
+    padding-left: 0;
+  }
+
+  [class^=col-]:last-child {
+    padding-right: 0;
+  }
+
+  .col-3 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 16.6666%;
+  }
+}
+
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width:60rem) {
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 3.7rem;
+  }
+}
+
+footer {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 1em;
+  background: #232323;
+  color: #fff;
+  text-align: left;
+  padding: 10em 0;
+}
+
+
+  </style>
+
+</head>
+  <body>
+
+    <header>
+<img src="images/logo.png" alt="bb. logo" class="logo">
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<section class="home-hero parallax--bg">
+<div class="container">
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Human Resource Department of Politeknik Brunei</h1>
+          <p>
+           <strong>About US</strong>
+          </p>
+          <p class="dark">
+                In charge and deals with training employment,
+                <br>
+                 Supporting an Organisation, 
+                 <br>
+                 Keeping Records of the Organisation. 
+
+                   <p>
+           For more inquiries do contact us ! 
+          </p>
+          </p>
+          <br>
+        
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>What We Do</h3>
+            <p>
+                Responsible for recruiting, screening, interviewing and placing workers.
+                <br>
+                Handle employee relations, payroll, benefits, and training.
+                <br>
+                Manage plan, direct and coordinate the administrative functions of Politeknik Brunei</p>
+          </div>
+        </aside>
+      </div>
+
+      <div class="main">
+        <div class="boxes">School of Information Communication and Technology</div>
+        <div class="boxes">School of Business</div>
+        <div class="boxes">School of Engineering & Science</div>
+        <div class="boxes">School of Nursing</div>
+        
+      </div>
+
+    </section>
+
+    <div class="section group">
+  <div class="col span_1_of_2">
+  <img src="">
+  </div>
+  <div class="col span_1_of_2">
+  <img src="">
+  </div>
+</div>
+
+</div>
+</section>
+
+<h1 class="title">Our Team</h1>
+<div class="team-section">
+  <div class="crdcta">
+    <img src="images/zi.webp">
+    <div class="text-section"><h2>Aziawati Samat</h2></div>
+  </div>
+    <div class="crdcta">
+    <img src="images/if.webp">
+    <div class="text-section"><h2>Ifwat Hj Adenin</h2></div>
+  </div>
+    <div class="crdcta">
+    <img src="images/em.webp">
+    <div class="text-section"><h2>Raheemah Hj Rosbna</h2></div>
+  </div>
+    <div class="crdcta">
+    <img src="images/fi.jpeg">
+    <div class="text-section"><h2>Syafiq Hassan</h2></div>
+  </div>
+</div>
+
+ <footer>
+  <div class="container">
+    <div class="col-3">
+      <p>Politeknik Brunei Ministry of Education, Block 2E, Ong Sum Ping, Jalan Ong Sum Ping, Bandar Seri Begawan, BA1311, Brunei Darussalam.</p>
+    </div>
+
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>PURPOSE</strong></li>
+        <li>Assignment Purpose</li>
+        <li>Ass_02</li>
+        <li>PB HRD</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>BWEP</strong></li>
+        <li>WD2201_SICT</li>
+        <li>Muhammad Khalid bin Haji Zaini</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="unstyled-list">
+        <li><strong>19FTT1124</strong></li>
+        <li>DLIC05</li>
+        <li>Intake09</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
